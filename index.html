@@ -19,42 +19,40 @@
   <head>
     <title>Wikipedia Viewer (freeCodeCamp Project)</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Pompiere" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre|Ubuntu" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 
-  <body class="text-center">
+  <body>
 
-      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-          <h3 class="hide">
-            Wikipedia Viewer
-          </h3>
+      <div class="cover-container p-3 mx-auto">
+        <header class="masthead mb-10 mx-center text-center">
+          <h1>Wikipedia Viewer</h1>
         </header>
-        <main role="main" class="inner cover">
+        <main role="main" class="inner cover" style="width: 42em">
           
-          <div>
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-lg btn-secondary convertTemp">Click here for a random article</a>
-          </div>
-          
-          <div>
-            <form id="searchForm">
-              <input id="textBox" type="text" placeholder="Search">
-              <button id="searchBtn" type="submit">Search</button>
-            </form>
-            <div id="results">
-              <!-- the result here -->
+          <div class="d-flex flex-column justify-content-center mx-auto"  style="width: 25em">
+            <div class="m-2">
+              <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-secondary btn-block">Click here for a random article</a>
             </div>
+          
+            <div>
+              <form id="searchForm">
+                <div class="form-group d-flex flex-row">
+                  <input id="textBox" type="text" placeholder="Search..." class="form-control m-2">
+                  <button id="searchBtn" type="submit" class="btn btn-primary m-2"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          <div>
+            
+          <div id="results" class="d-flex flex-column" style="width: 42em">
+            <!-- the result here -->
           </div>
           
         </main>
 
-        <footer class="mastfoot mt-auto">
-          <div class="inner">
-            <p class="text-center">
-              This page was built by <a href="https://twitter.com/siideemt" target="_blank">@siideemt</a> as a code learning project at <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
-            </p>
-          </div>
-        </footer>
       </div>
       
   </body>

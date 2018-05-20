@@ -39,13 +39,17 @@ $(document).ready(function() {
               var url = "https://en.wikipedia.org/wiki/" + searchResults[pageid].title.replace(/\s/, "_");
 
               // create HTML element of each search result
-              panelsHtml += 
-                '<a href=\"' + url + '\" target="_blank">'
-                + "<div>" 
-                + searchResults[pageid].title + "</br>"
-                + searchResults[pageid].extract
-                + "</div>"
-                + "</a>";
+              panelsHtml +=
+                '<div>'
+                + '<a href=\"' + url + '\" target="_blank">'
+                + '<div class="card">'
+                + '<div class="card-body">'
+                + '<h5 class="card-title">' + searchResults[pageid].title + '</h5>'
+                + '<p class="card-text">' + searchResults[pageid].extract + '</p>'
+                + '</div>'
+                + '</div>'
+                + '</a>'
+                + '</div>';
             });
             $("#results").html(panelsHtml);
 
