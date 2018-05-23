@@ -25,7 +25,7 @@ a:hover {
 
 html,
 body {
-  background-color: #444;
+  background-color: #445;
 }
 
 body {
@@ -56,13 +56,16 @@ header {
   justify-content: center;
 }
 .cover .btn {
-  padding: .75rem 1.25rem;
+  padding: .75rem;
   font-weight: 500;
 }
 
-#results {
-  padding-left: 20%;
-  padding-right: 20%;
+#initialItems {
+  min-width: 18rem;
+}
+
+#searchBtn {
+  padding: .75rem 1rem;
 }
 
 .card, .card-body, .card-title {
